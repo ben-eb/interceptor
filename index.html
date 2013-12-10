@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Interceptor: Sidescrolling 2D Canvas/JS Shmup</title>
+	<link rel="stylesheet" href="base.css">
+	<meta charset="utf-8">
+	<meta name="author" content="Ben Briggs">
+</head>
+
+<body>
+
+	<div id="container">
+
+		<canvas  id="bg"			width="800" height="500"></canvas>
+		<canvas  id="enemy"			width="800" height="500"></canvas>
+		<canvas  id="projectile" 	width="800" height="500"></canvas>
+		<canvas  id="particle"		width="800" height="500"></canvas>
+		<canvas  id="player"		width="800" height="500"></canvas>
+		<canvas  id="hud"			width="800" height="500"></canvas>
+		<canvas  id="overlay"		width="800" height="500">
+
+			<h1>Canvas Not Supported!</h1>
+
+			<p>It looks like your browser doesn't support the Canvas Element. If you would like to play Interceptor, please use the latest version of Safari, Chrome or Firefox for best results.</p>
+
+		</canvas>
+		
+		<section id="information" 	class="inactive">
+
+			<h1>Intel <span>(Escape to go back)</span></h1>
+
+			<h2>Controls</h2>
+
+			<ul>
+				<li>Z - Fire main cannon.</li>
+				<li>X - Deploy smart bomb.</li>
+				<li>Arrow keys - Pilot the ship.</li>
+				<li>Escape - Pause.</li>
+			</ul>
+
+			<h2>Player Ship</h2>
+
+			<img src="sprites/player.png" width="100" height="100">
+
+			<p>An agile spacecraft that features a fast firing, front mounted cannon and capacity for three bombs. The perfect weapon for taking out multiple waves of enemy drones.</p>
+
+			<h2>Enemy Drones</h2>
+
+			<div>
+
+				<img src="sprites/plasmaturret.png" width="100" height="100">
+
+				<h3>Plasma Turret</h3>
+	
+				<p>Stationary emplacement weapon carrying twin plasma cannons that fire directly at the player.</p>
+
+			</div>
+
+			<div>
+
+				<img src="sprites/tpdrone.png" width="100" height="100">
+	
+				<h3>:TP:Drone</h3>
+	
+				<p>Large drone that rapidly teleports from one side of the screen to the other.</p>
+
+			</div>
+
+			<div>
+	
+				<img src="sprites/orb.png" width="100" height="100">
+	
+				<h3>Orbital Reconnaissance Bot</h3>
+	
+				<p>Small bot that orbits other, larger drones. Has no weapons of its own.</p>
+
+			</div>
+
+			<div>
+	
+				<img src="sprites/z133.png" width="100" height="100">
+	
+				<h3>Z133 Drone</h3>
+	
+				<p>A fast moving drone that homes in towards nearby heat signatures. Limited fuel capacity.</p>
+
+			</div>
+
+			<div>
+	
+				<img src="sprites/ddrone.png" width="100" height="100">
+	
+				<h3>DDrone</h3>
+	
+				<p>Your regular old mass market drone. Cost cutting meant that these drones have no weapons, but appear in 	large numbers.</p>
+
+			</div>
+
+			<div>
+	
+				<img src="sprites/ddroneii.png" width="100" height="100">
+	
+				<h3>DDrone MKII</h3>
+	
+				<p>Due to increasing complaints about the non-lethality of the regular model, the MKII has an onboard laser 	cannon. It fires in one direction.</p>
+
+			</div>
+
+			<div>
+	
+				<img src="sprites/recoii.png" width="100" height="100">
+	
+				<h3>RecoII</h3>
+	
+				<p>When destroyed, shoots out a small bullet burst. </p>
+
+			</div>
+
+
+		</section>
+
+	</div>
+	
+	<script src="helpers.js"></script>
+	<script src="const.js"></script>
+	<script src="options.js"></script>
+	<script src="sound.js"></script>
+	<script src="gridline.js"></script>
+	<script src="enemy.js"></script>
+	<script src="enemy-database.js"></script>
+	<script src="projectile.js"></script>
+	<script src="particle.js"></script>
+	<script src="player.js"></script>
+	<script src="sprites.js"></script>
+	<script src="hud.js"></script>
+	<script src="buffer.js"></script>
+	<script src="base.js"></script>
+
+</body>
+
+</html>

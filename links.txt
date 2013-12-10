@@ -1,0 +1,3 @@
+// http://www.html5rocks.com/en/tutorials/canvas/performance/
+
+// http://board.flashkit.com/board/showthread.php?547056-making-an-object-move-in-a-circle
